@@ -5,5 +5,5 @@ import com.springframework.sfgpetclinic.repositories.PetRepo;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class PetRepoMapImpl extends CrudServiceMapImpl<Pet> implements PetRepo {
+public class PetRepoMapImpl extends CrudRepoMapImpl<Pet> implements PetRepo {
 }

@@ -5,5 +5,5 @@ import com.springframework.sfgpetclinic.repositories.OwnerRepo;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class OwnerRepoMapImpl extends CrudServiceMapImpl<Owner> implements OwnerRepo {
+public class OwnerRepoMapImpl extends CrudRepoMapImpl<Owner> implements OwnerRepo {
 }

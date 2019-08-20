@@ -5,7 +5,7 @@ import com.springframework.sfgpetclinic.repositories.CrudRepo;
 
 import java.util.*;
 
-public abstract class CrudServiceMapImpl<T extends BaseEntity> implements CrudRepo<T, Long> {
+public abstract class CrudRepoMapImpl<T extends BaseEntity> implements CrudRepo<T, Long> {
     private long idCounter;
     private Queue<Long> freeIds = new ArrayDeque<>();
     private Map<Long, T> map = new HashMap<>();
