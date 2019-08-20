@@ -12,13 +12,7 @@ import java.time.LocalDate;
 @Setter(value = AccessLevel.PRIVATE)
 @Getter
 @NoArgsConstructor
-@Entity
-@Table(name = "pets")
-public class Pet {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class Pet extends BaseEntity{
 
     @Column(name = "birth_date")
     @DateTimeFormat(pattern = "dd-MM-yyyy")

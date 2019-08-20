@@ -10,9 +10,7 @@ import javax.persistence.*;
 @Setter(value = AccessLevel.PRIVATE)
 @Getter
 @NoArgsConstructor
-@Entity
-@Table(name = "pet_types")
-public class PetType {
+public class PetType extends BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

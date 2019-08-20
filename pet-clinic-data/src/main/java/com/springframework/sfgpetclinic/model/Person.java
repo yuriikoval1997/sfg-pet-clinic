@@ -10,12 +10,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Getter
 @Setter(value = AccessLevel.PRIVATE)
-@Entity
-public class Person {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public abstract class Person extends BaseEntity{
 
     @Column(name = "first_name")
     private String firstName;
