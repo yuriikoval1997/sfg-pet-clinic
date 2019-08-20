@@ -1,7 +1,9 @@
-package com.springframework.sfgpetclinic.services.map_implemented;
+package com.springframework.sfgpetclinic.repositories.map_implemented;
 
 import com.springframework.sfgpetclinic.model.Pet;
-import com.springframework.sfgpetclinic.services.PetService;
+import com.springframework.sfgpetclinic.repositories.PetRepo;
+import org.springframework.stereotype.Repository;
 
-public class PetServiceMapImpl extends CrudServiceMapImpl<Pet> implements PetService {
+@Repository
+public class PetRepoMapImpl extends CrudServiceMapImpl<Pet> implements PetRepo {
 }

@@ -7,5 +7,24 @@
 <body>
     <!-- if you want to use a string with spaces, use single quotes -->
     <h1 th:text="'List of Vets'">default header</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Second Name</th>
+        </tr>
+        </thead>
+        <!-- property vets is set in VetController via model.addAttribute(...) -->
+        <!--  th:each="vet : ${vets}" => regular for-each loop -->
+        <tbody th:each="vet : ${vets}">
+        <tr>
+            <!-- WTF? What '?.' notation mean???? -->
+            <td th:text="${vet?.id}">is not found</td>
+            <td th:text="${vet?.firstName}">is not found</td>
+            <td th:text="${vet?.lastName}">is not found</td>
+        </tr>
+        </tbody>
+    </table>
 </body>
 </html>

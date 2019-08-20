@@ -1,16 +1,11 @@
 package com.springframework.sfgpetclinic.model;
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 
-@Setter(value = AccessLevel.PRIVATE)
-@Getter
 @NoArgsConstructor
 public class Pet extends BaseEntity{
 
@@ -23,4 +18,38 @@ public class Pet extends BaseEntity{
 
     @Column(name = "owners")
     private Owner owner;
+
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "id=" + super.getId() +
+                ", birthData=" + birthData +
+                ", petType=" + petType +
+                ", owner=" + owner +
+                '}';
+    }
+
+    public LocalDate getBirthData() {
+        return birthData;
+    }
+
+    public void setBirthData(LocalDate birthData) {
+        this.birthData = birthData;
+    }
+
+    public PetType getPetType() {
+        return petType;
+    }
+
+    public void setPetType(PetType petType) {
+        this.petType = petType;
+    }
+
+    public Owner getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Owner owner) {
+        this.owner = owner;
+    }
 }

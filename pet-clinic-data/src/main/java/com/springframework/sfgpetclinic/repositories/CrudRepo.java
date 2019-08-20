@@ -1,12 +1,11 @@
-package com.springframework.sfgpetclinic.services;
+package com.springframework.sfgpetclinic.repositories;
 
 
 import com.springframework.sfgpetclinic.model.BaseEntity;
-import com.springframework.sfgpetclinic.model.Vet;
 
 import java.util.Set;
 
-public interface CrudService<T extends BaseEntity, ID> {
+public interface CrudRepo<T extends BaseEntity, ID> {
 
     T findById(ID id);
 

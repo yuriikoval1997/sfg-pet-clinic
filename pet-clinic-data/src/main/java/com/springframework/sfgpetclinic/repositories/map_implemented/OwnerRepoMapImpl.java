@@ -1,7 +1,9 @@
-package com.springframework.sfgpetclinic.services.map_implemented;
+package com.springframework.sfgpetclinic.repositories.map_implemented;
 
 import com.springframework.sfgpetclinic.model.Owner;
-import com.springframework.sfgpetclinic.services.OwnerService;
+import com.springframework.sfgpetclinic.repositories.OwnerRepo;
+import org.springframework.stereotype.Repository;
 
-public class OwnerServiceMapImpl extends CrudServiceMapImpl<Owner> implements OwnerService {
+@Repository
+public class OwnerRepoMapImpl extends CrudServiceMapImpl<Owner> implements OwnerRepo {
 }
