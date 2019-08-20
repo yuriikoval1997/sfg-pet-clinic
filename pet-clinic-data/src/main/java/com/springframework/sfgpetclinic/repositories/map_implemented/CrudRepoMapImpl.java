@@ -17,15 +17,17 @@ public abstract class CrudServiceMapImpl<T extends BaseEntity> implements CrudRe
 
     @Override
     public T save(T t) {
-        long id;
-        if (freeIds.isEmpty()){
-            id = idCounter++;
-        } else {
-            id = freeIds.remove();
-        }
+        long id = getNextFreeId();
         map.put(id, t);
         t.setId(id);
         return t;
+    }
+
+    private long getNextFreeId(){
+        if (freeIds.isEmpty()){
+            return idCounter++;
+        }
+        return freeIds.remove();
     }
 
     @Override
