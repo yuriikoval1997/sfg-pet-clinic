@@ -5,8 +5,8 @@ import com.springframework.sfgpetclinic.services.CrudService;
 
 import java.util.*;
 
-public abstract class MapService<T extends BaseEntity> implements CrudService<T, Long> {
-    private Long idCounter;
+public abstract class CrudServiceMapImpl<T extends BaseEntity> implements CrudService<T, Long> {
+    private long idCounter;
     private Queue<Long> freeIds = new ArrayDeque<>();
     private Map<Long, T> map = new HashMap<>();
 
