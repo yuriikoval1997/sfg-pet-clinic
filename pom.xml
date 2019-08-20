@@ -53,8 +53,8 @@
 		</plugins>
 	</build>
 
-<!--    <scm>-->
-<!--        <developerConnection>scm:git:"URL for git SSH"</developerConnection>-->
-<!--    </scm>-->
+    <scm>
+        <developerConnection>scm:git:git@github.com:yuriikoval1997/sfg-pet-clinic.git</developerConnection>
+    </scm>
 
 </project>
