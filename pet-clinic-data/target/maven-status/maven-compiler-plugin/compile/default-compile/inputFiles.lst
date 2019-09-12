@@ -1,0 +1,14 @@
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/repositories/map_implemented/CrudRepoMapImpl.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/repositories/PetRepo.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/model/Person.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/repositories/OwnerRepo.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/model/BaseEntity.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/model/Vet.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/repositories/CrudRepo.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/model/PetType.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/model/Pet.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/repositories/map_implemented/PetRepoMapImpl.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/repositories/VetRepo.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/model/Owner.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/repositories/map_implemented/VetRepoMapImpl.java
+/home/yurii/Programming/Spring/Spring5Guru/sfg-pet-clinic/pet-clinic-data/src/main/java/com/springframework/sfgpetclinic/repositories/map_implemented/OwnerRepoMapImpl.java

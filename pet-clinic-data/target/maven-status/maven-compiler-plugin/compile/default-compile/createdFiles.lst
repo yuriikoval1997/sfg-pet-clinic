@@ -1,0 +1,14 @@
+com/springframework/sfgpetclinic/repositories/CrudRepo.class
+com/springframework/sfgpetclinic/model/PetType.class
+com/springframework/sfgpetclinic/model/Pet.class
+com/springframework/sfgpetclinic/repositories/map_implemented/CrudRepoMapImpl.class
+com/springframework/sfgpetclinic/model/Vet.class
+com/springframework/sfgpetclinic/model/Owner.class
+com/springframework/sfgpetclinic/repositories/PetRepo.class
+com/springframework/sfgpetclinic/repositories/map_implemented/VetRepoMapImpl.class
+com/springframework/sfgpetclinic/model/Person.class
+com/springframework/sfgpetclinic/repositories/map_implemented/PetRepoMapImpl.class
+com/springframework/sfgpetclinic/repositories/OwnerRepo.class
+com/springframework/sfgpetclinic/model/BaseEntity.class
+com/springframework/sfgpetclinic/repositories/map_implemented/OwnerRepoMapImpl.class
+com/springframework/sfgpetclinic/repositories/VetRepo.class
