@@ -1,15 +1,16 @@
-package com.springframework.sfgpetclinic.repositories;
+package com.springframework.sfgpetclinic.repositories.crud_bicycle;
 
 
 import com.springframework.sfgpetclinic.model.BaseEntity;
 
+import java.util.Optional;
 import java.util.Set;
 
 public interface CrudRepo<T extends BaseEntity, ID> {
 
-    T findById(ID id);
+    Optional<T> findById(ID id);
 
-    T save(T t);
+    Optional<T> save(T t);
 
     Set<T> findAll();
 

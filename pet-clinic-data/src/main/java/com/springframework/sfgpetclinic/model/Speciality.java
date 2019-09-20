@@ -5,18 +5,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
 @Getter
 @Setter
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-@Entity
-@Table(name = "types")
-public class PetTypes extends BaseEntity{
-    private String name;
+public class Specialty extends BaseEntity {
+    private String description;
 
-    public PetTypes(String name) {
-        this.name = name;
+    public Specialty(String description) {
+        this.description = description;
     }
 }
