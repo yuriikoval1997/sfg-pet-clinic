@@ -1,4 +1,4 @@
-package com.springframework.sfgpetclinic.repositories.jpa_repositories;
+package com.springframework.sfgpetclinic.repositories.spring_data;
 
 import com.springframework.sfgpetclinic.model.Vet;
 import org.springframework.data.repository.CrudRepository;

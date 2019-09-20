@@ -1,6 +1,6 @@
-package com.springframework.sfgpetclinic.repositories.crud_bicycle;
+package com.springframework.sfgpetclinic.services.database_stub;
 
 import com.springframework.sfgpetclinic.model.Owner;
 
-public interface OwnerRepo extends CrudRepo<Owner, Long> {
+public interface OwnerService extends CrudService<Owner, Long> {
 }

@@ -1,4 +1,4 @@
-package com.springframework.sfgpetclinic.services.database_stub.map_implemented_runtime_stubs;
+package com.springframework.sfgpetclinic.services.database_stub.map_implemented;
 
 import com.springframework.sfgpetclinic.model.BaseEntity;
 import com.springframework.sfgpetclinic.services.database_stub.CrudService;

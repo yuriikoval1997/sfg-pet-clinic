@@ -1,6 +1,6 @@
 package com.springframework.sfgpetclinic.controllers;
 
-import com.springframework.sfgpetclinic.repositories.OwnerRepo;
+import com.springframework.sfgpetclinic.services.database_stub.OwnerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,16 +11,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/owners")
 public class OwnerController {
 
-    private final OwnerRepo ownerRepo;
+    private final OwnerService ownerService;
 
     @Autowired
-    public OwnerController(OwnerRepo ownerRepo) {
-        this.ownerRepo = ownerRepo;
+    public OwnerController(OwnerService ownerService) {
+        this.ownerService = ownerService;
     }
 
-    @GetMapping({"", "/", "owners"})
+    @GetMapping({"", "/", "list_owners"})
     public String listPetOwners(Model model){
-        model.addAttribute("owners", ownerRepo.findAll());
-        return "owners/owners.html";
+        model.addAttribute("owners", ownerService.findAll());
+        return "owners/list_owners.html";
+    }
+
+    @GetMapping("/find")
+    public String findOwners(){
+        return "not_implemented.html";
     }
 }

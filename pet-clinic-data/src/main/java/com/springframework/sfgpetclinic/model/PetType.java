@@ -13,10 +13,10 @@ import javax.persistence.Table;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @Entity
 @Table(name = "types")
-public class PetTypes extends BaseEntity{
+public class PetType extends BaseEntity{
     private String name;
 
-    public PetTypes(String name) {
+    public PetType(String name) {
         this.name = name;
     }
 }

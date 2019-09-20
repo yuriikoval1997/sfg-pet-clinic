@@ -1,24 +1,23 @@
 package com.springframework.sfgpetclinic.model;
 
+import lombok.*;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 import java.util.Objects;
+import java.util.Optional;
 
+@Data
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@MappedSuperclass // no table is created for BaseEntity
 public abstract class BaseEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    protected Long id;
 
     @Override
     public boolean equals(Object o) {
@@ -30,7 +29,10 @@ public abstract class BaseEntity implements Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Optional
+                .ofNullable(id)
+                .map(Objects::hashCode)
+                .orElse(Objects.hash(-1));
     }
 
     @Override

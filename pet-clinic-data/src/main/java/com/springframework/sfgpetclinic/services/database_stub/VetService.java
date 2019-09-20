@@ -1,6 +1,6 @@
-package com.springframework.sfgpetclinic.repositories.crud_bicycle;
+package com.springframework.sfgpetclinic.services.database_stub;
 
 import com.springframework.sfgpetclinic.model.Vet;
 
-public interface VetRepo extends CrudRepo<Vet, Long> {
+public interface VetService extends CrudService<Vet, Long> {
 }
